@@ -11,6 +11,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <img  alt="rapidAPI" width="66px" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/reuntzuy6gy8ssnbktye" />
 <img  alt="AntDesign" width="66px" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
 </p>
+
+## Overview 
+A React-Redux cryptocurrency platform that tracks everything from the statistics of a cryptocurrency to the latest news about it. Powered using the Coinranking API that gives provides the data for all the major cryptocurrencies.
+
+## Screenshots
+<br><br>
+![cryptodesk-1](https://user-images.githubusercontent.com/56267419/147383245-cb349397-2042-42f7-8a77-dd846caa8429.png)
+
+
+<br><br>
+![cryptodesk-2](https://user-images.githubusercontent.com/56267419/147383250-7cc77ef0-9cfa-4ee7-83d3-448e693a0251.png)
+
+
+<br><br>
+![cryptodesk-3](https://user-images.githubusercontent.com/56267419/147383251-0ace93ed-4a61-4352-954d-a68be4da03ca.png)
+
+
+<br><br>
+![cryptodesk-5](https://user-images.githubusercontent.com/56267419/147383253-2af719c2-3688-4bcf-b84c-40572d7c2131.png)
+
+
+
+<br><br>
+
 ## Available Scripts
 
 In the project directory, you can run:

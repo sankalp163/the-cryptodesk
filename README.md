@@ -18,18 +18,21 @@ A React-Redux cryptocurrency platform that tracks everything from the statistics
 ## Screenshots
 <br><br>
 ![cryptodesk-1](https://user-images.githubusercontent.com/56267419/147383245-cb349397-2042-42f7-8a77-dd846caa8429.png)
+#### The CryptoDesk works as a one-stop destination for tracking your favourite coins and developments in the crypto world. 
 
 
 <br><br>
 ![cryptodesk-2](https://user-images.githubusercontent.com/56267419/147383250-7cc77ef0-9cfa-4ee7-83d3-448e693a0251.png)
-
+#### Fetching data from Coinranking API using the Redux-Toolkit, reducing dependency on fetching data again and again via Axios.
 
 <br><br>
-![cryptodesk-3](https://user-images.githubusercontent.com/56267419/147383251-0ace93ed-4a61-4352-954d-a68be4da03ca.png)
+![cryptodesk-6](https://user-images.githubusercontent.com/56267419/147383383-05ecb931-7ba4-4dac-ab97-0700b34b3e02.png)
+#### Get the historical data of individual cryptocurrencies through the interactive charts of Chart.js.
 
 
 <br><br>
 ![cryptodesk-5](https://user-images.githubusercontent.com/56267419/147383253-2af719c2-3688-4bcf-b84c-40572d7c2131.png)
+#### Get information of all the major exchanges.
 
 <br><br>
 ![cryptodesk-4](https://user-images.githubusercontent.com/56267419/147383267-39eda97a-7e4f-4e41-a1ea-20c96bb1e1f8.png)

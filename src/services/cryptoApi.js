@@ -24,6 +24,9 @@ export const cryptoApi = createApi({
       query: ({ coinId, timePeriod }) =>
         createRequest(`/coin/${coinId}/history/${timePeriod}`),
     }),
+    getCryptoExchanges: builder.query({
+      query: () => createRequest(`/exchanges`),
+    }),
   }),
 });
 
@@ -31,5 +34,6 @@ export const cryptoApi = createApi({
 export const {
   useGetCryptosQuery,
   useGetCryptoDetailsQuery,
-  useGetCryptoHistoryQuery, //hook created by redux to use our query
+  useGetCryptoHistoryQuery,
+  useGetCryptoExchangesQuery, //hooks created by redux to use our query
 } = cryptoApi;

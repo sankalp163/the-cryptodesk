@@ -31,6 +31,9 @@ A React-Redux cryptocurrency platform that tracks everything from the statistics
 <br><br>
 ![cryptodesk-5](https://user-images.githubusercontent.com/56267419/147383253-2af719c2-3688-4bcf-b84c-40572d7c2131.png)
 
+<br><br>
+![cryptodesk-4](https://user-images.githubusercontent.com/56267419/147383267-39eda97a-7e4f-4e41-a1ea-20c96bb1e1f8.png)
+
 
 
 <br><br>

@@ -10,8 +10,8 @@ const { Title } = Typography;
 
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
-  const globalStats = data?.data?.stats;
   console.log(data);
+  const globalStats = data?.data?.stats;
 
   if (isFetching) return <Spin size="large" />;
   return (
@@ -23,7 +23,7 @@ const Homepage = () => {
         <Col span={12}>
           <Statistic
             title="Total Cryptocurrencies"
-            value={millify(globalStats.total)}
+            value={millify(globalStats?.total)}
           ></Statistic>
         </Col>
         <Col span={12}>

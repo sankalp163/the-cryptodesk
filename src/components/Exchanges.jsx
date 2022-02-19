@@ -2,14 +2,13 @@ import React from "react";
 import millify from "millify";
 import HTMLReactParser from "html-react-parser";
 import { useGetCryptoExchangesQuery } from "../services/cryptoApi";
-import { Col, Row, Typography, Spin, Collapse, Avatar } from "antd";
+import { Col, Row, Typography, Spin, Collapse} from "antd";
 
 const { Text, Title } = Typography;
 
 const Exchanges = () => {
   const { data, isFetching } = useGetCryptoExchangesQuery();
 
-  console.log(data);
   if (isFetching) return <Spin size="large" />;
 
   const exchangeList = data?.data?.exchanges;

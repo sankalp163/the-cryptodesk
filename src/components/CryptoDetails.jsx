@@ -46,11 +46,6 @@ const CryptoDetails = () => {
     },
     { title: "Rank", value: cryptoDetails.rank, icon: <NumberOutlined /> },
     {
-      title: "24h Volume",
-      value: `$ ${cryptoDetails.volume && millify(cryptoDetails.volume)}`,
-      icon: <ThunderboltOutlined />,
-    },
-    {
       title: "Market Cap",
       value: `$ ${cryptoDetails.marketCap && millify(cryptoDetails.marketCap)}`,
       icon: <DollarCircleOutlined />,
@@ -73,23 +68,29 @@ const CryptoDetails = () => {
       value: cryptoDetails.numberOfExchanges,
       icon: <MoneyCollectOutlined />,
     },
-    {
-      title: "Approved Supply",
-      value: cryptoDetails.approvedSupply ? (
-        <CheckOutlined />
-      ) : (
-        <StopOutlined />
-      ),
-      icon: <ExclamationCircleOutlined />,
-    },
+    // {
+    //   title: "Approved Supply",
+    //   value: cryptoDetails.approvedSupply ? (
+    //     <CheckOutlined />
+    //   ) : (
+    //     <StopOutlined />
+    //   ),
+    //   icon: <ExclamationCircleOutlined />,
+    // },
     {
       title: "Total Supply",
-      value: `$ ${millify(cryptoDetails.totalSupply)}`,
+      value: `$ ${millify(
+        cryptoDetails?.supply?.max == null ? 0 : cryptoDetails?.supply?.max
+      )}`,
       icon: <ExclamationCircleOutlined />,
     },
     {
       title: "Circulating Supply",
-      value: `$ ${millify(cryptoDetails.circulatingSupply)}`,
+      value: `$ ${millify(
+        cryptoDetails?.supply?.circulating == null
+          ? 0
+          : cryptoDetails?.supply?.circulating
+      )}`,
       icon: <ExclamationCircleOutlined />,
     },
   ];
@@ -100,7 +101,7 @@ const CryptoDetails = () => {
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
-          {cryptoDetails.name} ({cryptoDetails.slug}) Price
+          {cryptoDetails.name} ({cryptoDetails.symbol}) Price
         </Title>
         <p>
           {cryptoDetails.name} live price in US Dollars. View Value statistics,
